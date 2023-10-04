@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twittwer Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <div class="logo">
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+      <div class="sidebarOption Active">
+        <i class="fa-solid fa-house"></i>
+        <p class="option">Home</p>
+      </div>
+      <div class="sidebarOption">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p class="option">Explore</p>
+      </div>
+      <div class="sidebarOption">
+        <i class="fa-regular fa-bell"></i>
+        <p class="option">Notifications</p>
+      </div>
+      <div class="sidebarOption">
+        <i class="fa-regular fa-envelope"></i>
+        <p class="option">Messages</p>
+      </div>
+      <div class="sidebarOption">
+        <!-- <i class="fa-solid fa-list"></i> -->
+        <span class="material-icons"> list_alt </span>
+        <p class="option">Lists</p>
+      </div>
+      <div class="sidebarOption">
+        <i class="fa-solid fa-users"></i>
+        <p class="option">Communities</p>
+      </div>
+      <div class="sidebarOption">
+        <i class="fa-brands fa-x-twitter"></i>
+        <p class="option">Premium</p>
+      </div>
+      <div class="sidebarOption">
+        <i class="fa-regular fa-user"></i>
+        <p class="option">Profile</p>
+      </div>
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <p class="option">more</p>
+      </div>
+      <div class="sidebarButton">
+        <button class="Button_Post">Post</button>
+      </div>
+    </div>
+    <!-- Sidebar Close -->
+
+    <!-- Post_Box Start -->
+    <div class="post">
+      <div class="post_Home">
+        <h3>Home</h3>
+      </div>
+      <div class="button">
+        <div class="Post_Button">
+          <h2>For You</h2>
+        </div>
+        <div class="Post_Button2">
+          <h2>Following</h2>
+        </div>
+      </div>
+      <div class="tweet_Box">
+        <form>
+          <div class="tweetbox__input">
+            <img src="avtar2.jpg" alt="profile_Photo" />
+            <input type="text" placeholder="What is happening?!" />
+          </div>
+          <div class="tweet_icons_button">
+            <div class="icons">
+              <i class="fa-solid fa-photo-film"></i>
+              <!-- <span class="material-icons">GIF</span> -->
+              <i class="fa-solid fa-list"></i>
+              <i class="fa-regular fa-face-smile"></i>
+              <i class="fa-regular fa-calendar-check"></i>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="tweet">
+              <button class="tweetBox__tweetButton">Post</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <button class="show_Post">Show Post</button>
+    </div>
+
+    <!-- Post_Box End -->
+  </body>
+</html>
