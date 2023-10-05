@@ -11,19 +11,29 @@ body{
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 10px;
+    padding: 0 10px; 
 }
 .sidebar {
     border-right: 1px solid rgb(225, 221, 221);
     flex: 0.2;
     min-width: 250px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px; 
 }
 .logo{
     font-size: 30px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+}
+.fa-brands:hover{
+    background-color: rgb(227, 230, 230);
+    border-radius: 40px;
+    /* width: 50px;
+    height: 50px; */
+   
+
 }
 .sidebarOption{
     display: flex;
@@ -52,11 +62,12 @@ body{
     border: none;
 }
 .sidebarOption:hover {
-    background-color: rgb(106, 108, 109);
+    background-color: rgb(227, 230, 230);
     border-radius: 30px;
     /* transition: color 100ms ease-out; */
     
   }
+  /* post start */
 .post{
     border-right: 1px solid rgb(225, 221, 221);
     flex: 0.2;
@@ -64,9 +75,18 @@ body{
     margin-top: 10px;
     
 }
+.post::-webkit-scrollbar {
+    display: none;
+  }
+  
+.post {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 .post_Home,h3{
     font-size: 20px;
     margin-left: 10px;
+    position: sticky;
 }
 .post_Home{
     height: 5%;
@@ -103,8 +123,7 @@ body{
     flex: 0.2;
     align-items: center;
     margin: 0;
-    
-
+    position: sticky;
 }
 .Post_Button h2{
     display: flex;
@@ -193,7 +212,6 @@ body{
     /* flex: 0.2; */
     border: none;
     height: 65px;
-    /* background-color: aqua; */
 }
 .tweetBox__tweetButton {
     background-color: #22aeb5;
@@ -206,3 +224,52 @@ body{
     margin-top: 20px;
     margin-left: 90px;
   }
+  .feed_post{
+    height: 600px;
+    width: 598px;
+    background-color: #22aeb5;
+  }
+  .feed_post img{
+    height: 100%;
+    width: 100%;
+  }
+  /* widgets */
+  .widgets {
+    flex: 0.3;
+  }
+  
+  .widgets__input {
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 230, 230);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+  }
+  
+  .widgets__input input {
+    border: none;
+    background-color: rgb(227, 230, 230)
+  }
+  
+  .widgets__searchIcon {
+    color: gray;
+  }
+  
+  .widgets__widgetContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+  }
+  
+  .widgets__widgetContainer h2 {
+    font-size: 18px;
+    font-weight: 800;
+  }
+ 
+  
+  
