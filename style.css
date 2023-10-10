@@ -60,6 +60,7 @@ body{
     height: 50px;
     margin-top: 5px;
     border: none;
+    cursor: pointer;
 }
 .sidebarOption:hover {
     background-color: rgb(227, 230, 230);
@@ -132,7 +133,12 @@ body{
     margin-top: 20px;
     font-weight: 10px;
     font-size: 15px;
-    /* cursor: pointer; */
+    
+}
+.Post_Button.active{
+  border-bottom:4px solid blue;
+  border-radius: 2px;
+  color: black;
 }
 .Post_Button2 h2{
     display: flex;
@@ -141,24 +147,17 @@ body{
     margin-top: 20px;
     font-weight: 10px;
     font-size: 15px;
+    color: #75755f;
 }
 .Post_Button:hover{
     background-color:rgb(227, 230, 230)
     
-
+  
 }
 .Post_Button2:hover{
     background-color:rgb(227, 230, 230)
-
 }
-.post::-webkit-scrollbar {
-    display: none;
-  }
-  
-.post {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+
   
   /* tweet box */
 .tweetbox__input img {
@@ -193,14 +192,32 @@ body{
   
  .icons{
     width: 60%;
-    height: 20%;
+    height: 50%;
     padding: 20px;
     font-size: 20px;
     font-weight: 20px;
     color: #22aeb5;
     margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+} 
+.fa-solid:hover{
+  background-color: #cfd1d3;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  padding: 10px;
+}
+.fa-regular:hover{
+  background-color: #cfd1d3;
+  border-radius: 30px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  padding: 10px;
+}
 
-}  
 
 .tweet{
     width: 20%;
@@ -209,10 +226,11 @@ body{
 .tweet_icons_button{
     display: flex;
     border-bottom: 1px solid rgb(225, 221, 221);
-    /* flex: 0.2; */
+    flex: 0.2;
     border: none;
     height: 65px;
 }
+
 .tweetBox__tweetButton {
     background-color: #22aeb5;
     border: none;
