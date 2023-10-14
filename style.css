@@ -36,15 +36,17 @@ body{
 
 }
 .sidebarOption{
-    display: flex;
+    /* display: flex;  */
     align-items: center;
     cursor: pointer;
     padding: 15px;
     font-size: 20px;
     color:#171716;
+    
 }
 .option{
    padding-left: 22px;
+   display: inline-block;
 }
 .sidebarOption.Active{
     color: black;
@@ -65,9 +67,51 @@ body{
 .sidebarOption:hover {
     background-color: rgb(227, 230, 230);
     border-radius: 30px;
+    width: fit-content;
     /* transition: color 100ms ease-out; */
     
   }
+  .profile{
+    display: flex;
+    border-radius: 35px;
+    width: 250px;
+    height: 65px;
+    margin-top: 60px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .profile img{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    height: 50px;
+    
+  }
+  #Profile_Name{
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 15px;
+        padding-left: 15px;
+        /* padding: 10px; */
+        
+        
+  }
+  #User_Name{
+    color: gray;
+    padding-left: 15px;
+  }
+  .profile .material-icons{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile:hover{
+    background-color: rgb(227, 230, 230);
+    
+  }
+  
   /* post start */
 .post{
     border-right: 1px solid rgb(225, 221, 221);
@@ -202,7 +246,7 @@ body{
     justify-content: space-between;
 } 
 .fa-solid:hover{
-  background-color: #cfd1d3;
+  background-color: #e1edf8;
   border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -210,7 +254,7 @@ body{
   padding: 10px;
 }
 .fa-regular:hover{
-  background-color: #cfd1d3;
+  background-color: #e1edf8;
   border-radius: 30px;
   height: 40px;
   width: 40px;
@@ -240,7 +284,8 @@ body{
     width: 75px;
     height: 35px;
     margin-top: 20px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
+    float: right;
   }
   .feed_post{
     height: 600px;
